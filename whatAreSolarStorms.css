@@ -1,0 +1,42 @@
+
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar .nav-link {
+    color: #fff;
+    padding: 0 15px;
+  }
+  .fondo{
+    border-radius: 10px;
+    background-color: rgba(197, 186, 186, 0.2);
+  }
+  .content-container {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;    
+    margin-top: 50px; /* Espaciado debajo de la navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente el contenido */
+    min-height: calc(100vh - 50px); /* Mantiene el espacio sin sobrepasar el fondo */
+    position: relative;
+}
+
+
+  
+  .main-content {
+    max-width: 800px;
+    text-align: center;
+    padding: 25px;
+    z-index: 2;
+
+  }
+  

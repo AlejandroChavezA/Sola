@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const WhatAreSolarStorms = forwardRef((props, ref) => {
   return (
     <>
+    <></>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="/">Sola</Navbar.Brand>
