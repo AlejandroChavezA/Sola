@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Button = ({ label, onClick }) => {
-  return (
-    <a href="#explore" className="btn" onClick={onClick}>
-      {label}
-    </a>
-  );
-};
+
+const Button = ({ label, onClick }) => (
+  <button onClick={onClick} className="btn">
+    {label}
+  </button>
+);
 
 export default Button;

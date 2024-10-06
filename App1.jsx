@@ -10,7 +10,7 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         
         {/* Ruta de la segunda página */}
-        <Route path="/info" element={<WhatAreSolarStorms />} />
+        <Route path="/info" element={<WhatAreSolarStorms/>} />
       </Routes>
     </Router>
   );
