@@ -1,11 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Button from './Button' 
-const LandingPage = () => {
-    const navigate = useNavigate();
-    const handleClick = () => {
-        navigate('/info');
-      };
+import React, { useRef } from 'react';
+import Button from './Button'; 
+const LandingPage = ({ scrollToSection }) => {
+ 
     return (
       <div className="landing-page" style={{ textAlign: 'center', padding: '20px' }}>
         <div className="content">
@@ -13,7 +9,8 @@ const LandingPage = () => {
           <p>Descubre cómo las tormentas solares impactaron la Tierra y más allá.</p>
         </div>
         <div className="contentbtn">
-        <Button label="Explorar más" onClick={handleClick} />
+        <Button label="Explorar más" onClick={scrollToSection} />
+
         </div>
         <div className="background-animation">
           <div className="sun"></div>
@@ -23,4 +20,4 @@ const LandingPage = () => {
     );
   };
     
-export default LandingPage
+export default LandingPage;
