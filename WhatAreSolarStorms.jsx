@@ -9,37 +9,42 @@ const WhatAreSolarStorms = forwardRef((props, ref) => {
         <div className="nav-link">Info</div>
         <div className="nav-link">Contacto</div>
       </nav> */}
-      <div className="content-container">
-        <section ref={ref} className="main-content fondo">
-          <h2>El Sol</h2>
-          <p>
-          Es la estrella de nuestro sistema solar, gracias a ella tanto la Tierra como otros cuerpos celestes es que nos mantenemos en su orbita. 
-          Si la Tierra fuera del tamaño de una pelota de futbol, el sol seria del tamaño de un edificio de 20 metros.
-          </p>
+      <div className=" page-background">
+    <div class="content-container">
+    <section ref={ref} className="main-content fondo">
 
+    <div class="seccion-borrosa">
+      <h2>El Sol</h2>
+      <p>
+        Es la estrella de nuestro sistema solar, gracias a ella tanto la Tierra como otros cuerpos celestes es que nos mantenemos en su orbita. 
+        Si la Tierra fuera del tamaño de una pelota de futbol, el sol seria del tamaño de un edificio de 20 metros.
+      </p>
+    </div>
+
+    <div class="seccion-borrosa">
+      <div class="manchas">
+        <div class="info">
           <h3>Manchas Solares</h3>
           <p>
-          Son pequeñas pecas que tienden aparecer en el sol cuando hay mucha concentración de 
-          lineas de campo magnético.
+            Son pequeñas pecas que tienden aparecer en el sol cuando hay mucha concentración de 
+            líneas de campo magnético.
           </p>
-          <img src = "https://spaceweather.com/images2024/05oct24/hmi200.gif" alt ="Manchas solares del 05/10/2024" figure = "" />
+        </div>
+        <img src="https://spaceweather.com/images2024/05oct24/hmi200.gif" alt="Manchas solares del 05/10/2024" />
+      </div>
+    </div>
 
-
-          <h2>¿Qué son las tormentas solares?</h2>
-          <p>
-          Son tormentas causadas por “tormentas solares”, esas tormentas causan 
-          perturbaciones mayores al campo magnético de la Tierra. Todo esto produce efectos
-          como interrupciones en la radio, apagones de energía y muy hermosas auroras.
-          </p>
-          <p>
-          Se dividen en escalas, que la G1 seria la menos potente, teniendo la G5 como el 
-          de mayores consecuencias. A continuación se muestra una tabla donde se enlista los 
-          efectos de cada una y su índice de Kp.
-          </p>
-          <img src = "https://spaceweather.com/glossary/g5.jpg" alt = "tabla_escalas" style = {{
-            width: '700px'
-          }} />
-
+    <div class="seccion-borrosa">
+      <h2>¿Qué son las tormentas solares?</h2>
+      <p>
+        Son tormentas causadas por “tormentas solares”, esas tormentas causan perturbaciones mayores al campo magnético de la Tierra. Todo esto produce efectos como interrupciones en la radio, apagones de energía y muy hermosas auroras.
+      </p>
+      <p>
+        Se dividen en escalas, que la G1 seria la menos potente, teniendo la G5 como el de mayores consecuencias. A continuación se muestra una tabla donde se enlista los efectos de cada una y su índice de Kp.
+      </p>
+      <img src="https://spaceweather.com/glossary/g5.jpg" alt="tabla_escalas" />
+    </div>
+     <div class="seccion-borrosa">
           <h3>Llamaradas</h3>
           <p>
             Son explosiones gigantes en la superficie del Sol que ocurre cuando las líneas de campo magnético 
@@ -48,13 +53,15 @@ const WhatAreSolarStorms = forwardRef((props, ref) => {
             La cantidad de energía liberada es equivalente a millones de bombas nucleares explotanto
             al mismo tiempo.
           </p>
-
+          </div>
+          <div class="seccion-borrosa">
           <h3>CME</h3>
           <p>
             Es un evento solar, se denomina eyección de masa coronal o CME es una nube gigante 
             de plasma solar empapada con líneas de campo magnético (radiación).
           </p>
-
+          </div>
+          <div class="seccion-borrosa">
           <p>
             DIFERENCIAS <br />
             La diferencia entre una llamarada y un CME, es que la primera se identifica como un destello
@@ -68,7 +75,8 @@ const WhatAreSolarStorms = forwardRef((props, ref) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-
+          </div>
+          <div class="seccion-borrosa">
           <h2>Tormentas Geomagnéticas Mayo 2024</h2>
           <p>
           El 8 de mayo de 2024 se empezó a registrar tormentas solares estimadas entre las categorías G2-G3, causado por la enorme mancha solar AR3664.
@@ -79,7 +87,7 @@ const WhatAreSolarStorms = forwardRef((props, ref) => {
           Debido a que la mancha solar AR3664 seguia desprendiendo CMEs hacia la tierra. 
           Para el 10 y 11 de mayo las 6 CMEs impactaron con la tierra de categoría G4 y G5.
           </p>
-
+        </div>
           <h3>Galeria</h3>
           <img src = "https://spaceweather.com/images2024/08may24/halocme.gif" alt=""
           style = {{
@@ -93,7 +101,7 @@ const WhatAreSolarStorms = forwardRef((props, ref) => {
           
           {props.children}
         </section>
-        
+        </div>
       </div>
       
         
