@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import './WhatAreSolarStorms.css';
+import './whatAreSolarStorms.css';
 
 const WhatAreSolarStorms = forwardRef((props, ref) => {
   return (
